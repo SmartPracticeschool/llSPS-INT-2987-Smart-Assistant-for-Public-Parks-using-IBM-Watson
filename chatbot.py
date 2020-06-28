@@ -42,7 +42,7 @@ text_to_speech = TextToSpeechV1(
 text_to_speech.set_service_url('https://api.eu-gb.text-to-speech.watson.cloud.ibm.com/instances/6265cfe4-5ac9-4783-8da6-84ca4ea07091')
 
 
-with open(join(dirname(__file__), './.', 'hello_world.mp3'),
+with open(join(dirname(__file__), './.', 'file.mp3'),
                'rb') as audio_file:
     speech_recognition_results = speech_to_text.recognize(
         audio=audio_file,
